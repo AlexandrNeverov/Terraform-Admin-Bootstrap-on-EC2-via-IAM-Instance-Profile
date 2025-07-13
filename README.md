@@ -1,6 +1,6 @@
 # Admin Terraform Bootstrap EC2 🛠️
 
-[![Admin Terraform Bootstrap EC2 Demo](https://raw.githubusercontent.com/AlexandrNeverov/admin-terraform-bootstrap-ec2/main/image.png)](https://www.youtube.com/watch?v=XXXXXXXXXXX)
+[![Admin Terraform Bootstrap EC2 Demo](https://raw.githubusercontent.com/AlexandrNeverov/Terraform-Admin-Bootstrap-on-EC2-via-IAM-Instance-Profile/main/image.png)](https://www.youtube.com/watch?v=XXXXXXXXXXX)
 
 ## 🚀 Why This Matters
 
