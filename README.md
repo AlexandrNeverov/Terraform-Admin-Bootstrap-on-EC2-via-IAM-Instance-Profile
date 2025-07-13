@@ -79,7 +79,8 @@ bash setup-terraform-s3-dynamodb.sh
 
 5. 🔍 Check IAM role policies (optional):
 ```bash
-bash check-iam-role-policies.sh
+bash aws iam list-attached-role-policies \
+  --role-name "$ROLE_NAME"
 ```
 
 ---
