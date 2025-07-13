@@ -9,6 +9,7 @@ AWS_REGION="us-east-1"
 TIMESTAMP=$(date +%s)
 BUCKET_NAME="terraform-backend-zero-${TIMESTAMP}"
 DYNAMODB_TABLE="terraform-locks-zero-${TIMESTAMP}"
+ROLE_NAME="TerraformRunnerRole"
 
 # ----------------------------
 # STEP 1: Update & install dependencies (smart check)
@@ -89,12 +90,10 @@ aws dynamodb create-table \
 # ----------------------------
 echo "[5/6] Waiting for DynamoDB table to become ACTIVE..."
 
-# Wait for table to exist
 aws dynamodb wait table-exists \
   --table-name "$DYNAMODB_TABLE" \
   --region "$AWS_REGION"
 
-# Poll until status becomes ACTIVE
 echo "Polling for table status = ACTIVE..."
 for i in {1..30}; do
   STATUS=$(aws dynamodb describe-table \
@@ -134,3 +133,11 @@ terraform {
 }
 EOF
 echo "---------------------------------------------"
+
+# ----------------------------
+# STEP 7: List IAM policies attached to TerraformRunnerRole
+# ----------------------------
+echo ""
+echo "[6/6] Listing IAM policies attached to role: $ROLE_NAME"
+aws iam list-attached-role-policies \
+  --role-name "$ROLE_NAME"
