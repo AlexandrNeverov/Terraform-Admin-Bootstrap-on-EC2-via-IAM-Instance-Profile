@@ -11,7 +11,6 @@ Getting started with Terraform on AWS from a fresh EC2 instance can be tedious â
 Perfect for:
 
 - Secure, minimal EC2-based Terraform environments
-- DevOps interviews or bootstrapping projects fast
 - Local-free infrastructure setups (pure CLI / instance-based)
 - Teaching and showcasing DevOps practices
 
@@ -35,8 +34,8 @@ Perfect for:
 |-----------------------------------------------|----------------------------------------------------------------|
 | `infra-bootstrap/aws-zero-node-bootstrap.sh` | Launch EC2 with IAM role and security group                    |
 | `bootstrap-zero-node-tools.sh`               | Install Terraform, AWS CLI, Git, etc.                          |
-| `setup-terraform-s3-dynamodb.sh`             | Create S3 bucket and DynamoDB table for backend                |
-| `check-iam-role-policies.sh`                 | Check if the EC2 IAM role has AdministratorAccess attached     |
+| `setup-terraform-s3-dynamodb.sh`             | Create S3 bucket and DynamoDB table for backend +  Check if the EC2 IAM role has AdministratorAccess attached              |
+| `check-iam-role-policies.sh`                 |      |
 
 ---
 
