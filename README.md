@@ -35,7 +35,6 @@ Perfect for:
 | `infra-bootstrap/aws-zero-node-bootstrap.sh` | Launch EC2 with IAM role and security group                    |
 | `bootstrap-zero-node-tools.sh`               | Install Terraform, AWS CLI, Git, etc.                          |
 | `setup-terraform-s3-dynamodb.sh`             | Create S3 bucket and DynamoDB table for backend +  Check if the EC2 IAM role has AdministratorAccess attached              |
-| `check-iam-role-policies.sh`                 |      |
 
 ---
 
