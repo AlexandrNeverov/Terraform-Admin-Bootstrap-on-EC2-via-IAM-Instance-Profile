@@ -82,6 +82,20 @@ bash setup-terraform-s3-dynamodb.sh
 bash aws iam list-attached-role-policies \
   --role-name "$ROLE_NAME"
 ```
+6. ☁️ 📦 Install via cURL (infra-bootstrap: create_zero_node_aws):
+```bash
+curl -v https://raw.githubusercontent.com/AlexandrNeverov/Terraform-Admin-Bootstrap-on-EC2-via-IAM-Instance-Profile/refs/heads/main/create_zero_node_aws.sh | bash -
+```
+
+7. ☁️ 📦 Install via cURL (bootstrap-zero-node-tools: setup_zero_node_tools):
+```bash
+curl -v https://raw.githubusercontent.com/AlexandrNeverov/Terraform-Admin-Bootstrap-on-EC2-via-IAM-Instance-Profile/refs/heads/main/setup_zero_node_tools.sh | bash -
+```
+
+8. ☁️ 📦 Install via cURL (setup-terraform-s3-dynamodb: setup_zero_terraform):
+```bash
+curl -v https://raw.githubusercontent.com/AlexandrNeverov/Terraform-Admin-Bootstrap-on-EC2-via-IAM-Instance-Profile/refs/heads/main/setup_zero_terraform.sh | bash -
+```
 
 ---
 
